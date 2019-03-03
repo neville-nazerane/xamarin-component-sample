@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:base="clr-namespace:SampleApp"
+             x:Class="SampleApp.ItemComponent"
+             x:DataType="base:ItemComponentViewModel" >
+  <ContentView.Content>
+      <StackLayout>
+            <Label Text="Your item:" />
+            <Label Text="{Binding Data.Title}" />
+            <Label MaxLines="4" Text="{Binding Data.Description}" />
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>
